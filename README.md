@@ -7,5 +7,3 @@ I am learning git commands
 3. Commit 
 4. Push
 
-
-Practice-1
