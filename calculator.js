@@ -12,4 +12,4 @@ const num1 = Number(prompt("Enter first number:"));
 const num2 = Number(prompt("Enter second number:"));
 const sum = num1 + num2;
 alert(`The sum of numbers ${num1} and ${num2} is ${sum}`);
-
+console.log({ num1, num2 }); // shows the values passed in (num1 and num2) ; done by using curly braces
