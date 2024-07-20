@@ -1,3 +1,5 @@
+//WRITE A JS PROGRAM TO CREATE SUM CALCULATOR USING USER INTERACTION
+
 // CODE:
 // const num1 = prompt("Enter first number:");
 // const num2 = prompt("Enter second number:");
@@ -11,5 +13,5 @@
 const num1 = Number(prompt("Enter first number:"));
 const num2 = Number(prompt("Enter second number:"));
 const sum = num1 + num2;
-alert(`The sum of numbers ${num1} and ${num2} is ${sum}`);
+alert(`The sum of numbers ${num1} and ${num2} is ${sum}`); // Use of string literals
 console.log({ num1, num2 }); // shows the values passed in (num1 and num2) ; done by using curly braces
