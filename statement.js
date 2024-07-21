@@ -25,7 +25,6 @@
 //   alert("You are female");
 // }
 
-
 // 2. Switch case
 
 // CHECK MULTIPLE CASES
@@ -46,7 +45,6 @@
 //     break;
 // }
 
-
 // WRITE A JS PROGRAM TO CHECK GRADE OF STUDENT
 
 // const score = Number(prompt("Enter your percentage?"));
@@ -64,24 +62,21 @@
 
 // CONDITIONAL OPERATOR (TERNARY OPERATOR)
 
-
-
 // IF (){} ELSE{} ES5
 // TERNARY OPERATOR  ES6
 
-
 // const gender = "m";
 // if (gender === "m") {
-//   console.log("m");
+//   console.log("male");
 // } else {
-//   console.log("f");
-
+//   console.log("female");
+// }
 
 // SYNTAX:
 // (condition) ? true : false;
-gender === "m" ? console.log("m") : console.log("f"); //m
 
-
+const gender = "m";
+gender === "m" ? console.log("male") : console.log("female");
 
 // =      Variable assign
 // ==     data type and value compare
