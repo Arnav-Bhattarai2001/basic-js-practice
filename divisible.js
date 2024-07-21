@@ -3,14 +3,14 @@
 const num = Number(prompt("Enter a number"));
 
 if (num > 0) {
-  switch (num) {
-    case num % 3 == 0 && num % 7 == 0:
+  switch (true) {
+    case num % 3 === 0 && num % 7 === 0:
       alert(`THE NUMBER ${num} is divisible by both 3 and 7`);
       break;
-    case num % 3 == 0:
+    case num % 3 === 0:
       alert(`THE NUMBER ${num} is divisible by 3 only`);
       break;
-    case num % 7 == 0:
+    case num % 7 === 0:
       alert(`THE NUMBER ${num} is divisible by 7 only`);
       break;
     default:
