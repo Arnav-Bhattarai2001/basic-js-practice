@@ -25,26 +25,27 @@
 //   alert("You are female");
 // }
 
-// =      Variable assign
-// ==     data type and value compare
-// ===    data type and value compare + data conversion to boolean  (always use for value comparisions)
 
 // 2. Switch case
 
 // CHECK MULTIPLE CASES
 
-// SYNTAX: switch (condition) {
-//   case "1":
+// WRITE A JS PROGRAM TO CHECK NAME OF DAYS
+// CODE:
+
+// const day = Number(prompt("Enter day number 1 or 2?"));
+// switch (day) {
+//   case 1:
 //     alert("sunday");
 //     break;
-//   case "2":
+//   case 2:
 //     alert("Monday");
 //     break;
 //   default:
-//     alert("You have to choose betn 1 and 7");
+//     alert("You have to choose betn 1 and 2");
+//     break;
 // }
 
-// WRITE A JS PROGRAM TO CHECK NAME OF DAYS
 
 // WRITE A JS PROGRAM TO CHECK GRADE OF STUDENT
 
@@ -79,3 +80,9 @@
 // SYNTAX:
 // (condition) ? true : false;
 gender === "m" ? console.log("m") : console.log("f"); //m
+
+
+
+// =      Variable assign
+// ==     data type and value compare
+// ===    data type and value compare + data conversion to boolean  (always use for value comparisions)
