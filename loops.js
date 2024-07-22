@@ -2,22 +2,23 @@
 // 2.do while
 // 3.while
 
-// For SyntaxError
+// For 
+// Syntax:
 // for (begin ; step condition; increase begin step){
 //    // CODE
 // }
 
 // JS Program for mul table
 
-// const table = Number(prompt("Enter the number for table; 2"));
-// if (isNaN(table)) {
-//   // if (typeof table !== "number"){
-//   alert("You didn't enter number!!");
-// }
-// for (let i = 1; i <= 10; i++) {
-//   // console.log(table * i);
-//   console.log(`${table}*${i}=${table * i}`);
-// }
+const table = Number(prompt("Enter the number for table; 2"));
+if (isNaN(table)) {
+  // if (typeof table !== "number"){
+  alert("You didn't enter number!!");
+}
+for (let i = 1; i <= 10; i++) {
+  // console.log(table * i);
+  console.log(`${table}*${i}=${table * i}`);
+}
 
 // 2.DO WHILE LOOP
 
@@ -48,13 +49,13 @@
 
 // #WHILE LOOP
 
-const table = Number(prompt("Enter the number for table; 2"));
-if (isNaN(table)) {
-  // if (typeof table !== "number"){
-  alert("You didn't enter number!!");
-}
-let i = 1;
-while (i <= 10) {
-  console.log(`${table}*${i}=${table * i}`);
-  i++;
-}
+// const table = Number(prompt("Enter the number for table; 2"));
+// if (isNaN(table)) {
+//   // if (typeof table !== "number"){
+//   alert("You didn't enter number!!");
+// }
+// let i = 1;
+// while (i <= 10) {
+//   console.log(`${table}*${i}=${table * i}`);
+//   i++;
+// }
