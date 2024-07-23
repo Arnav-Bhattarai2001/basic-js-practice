@@ -34,3 +34,32 @@ sumations({ a: 2, b: 3, c: 1, d: 4 });
 const summ = (a, b) => {
   return a + b;
 };
+
+// 4. closure Function :
+
+// FOR EXPLANATION:
+// let count = 0;
+// const counter = () => {
+//   count = count + 1;
+//   return count;
+// };
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+
+// ACTUAL COUNTER FUNCTION:
+const mainCounter = () => {
+  let count = 0;
+  return () => {
+    count = count + 1;
+    return count;
+  };
+};
+const count1 = mainCounter(); // dashain counter
+const count2 = mainCounter(); // tihar counter
+console.log(count1());
+console.log(count1());
+console.log(count1());
+
+console.log(count2());
+console.log(count2());
