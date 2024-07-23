@@ -63,3 +63,29 @@ console.log(count1());
 
 console.log(count2());
 console.log(count2());
+
+// 6. Recursive function
+
+// factorial of 5
+
+const factorial = (num) => {
+  if (num === 0 || num === 1) {
+    return 1;
+  }
+  return num * factorial(num - 1);
+};
+
+const fact = factorial(5);
+console.log(fact);
+
+// write a recursion formula for countdown
+
+const countDown = (counter) => {
+  console.log(counter);
+  let count = counter - 1;
+  if (count === 0) {
+    return 0;
+  }
+  return countDown(count);
+};
+countDown(10);
