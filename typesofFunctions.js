@@ -68,7 +68,23 @@ countDown(10);
 
 // 7. Inline function
 
+
 return countDown(count);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // 8. anonymous function
 // 9. callback function
