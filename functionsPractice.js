@@ -14,6 +14,16 @@ const counter = (statement) => {
 const number = counter("The quick brown fox");
 console.log(number);
 
-
 // const counter = (statement) => String(statement).match(vowels).
 
+//Write a JavaScript function to get the number of occurrences of each letter in a specified string.
+
+const count = 1;
+const numberOfalphabets = (sentence) => {
+  const alphabets = /[abcdefghijklmnopqrstuvwxyz]/g;
+  const text = String(sentence);
+  const text1 = text.toLowerCase();
+  const match = text1.match(alphabets);
+  return ;
+};
+ 
