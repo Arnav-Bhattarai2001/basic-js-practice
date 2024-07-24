@@ -1,6 +1,7 @@
 // // TYPES OF FUNCTION :
 
-// // 1. DEFAULT Function :
+// // 1. DEFAULT Function : Used for pagination  
+
 
 // const defaultFunc = (name) => {
 //   console.log(`Hello ${name}`);
@@ -96,9 +97,9 @@
 //   console.log(a);
 // };
 
-// 8. Inline Function :
+// // 8. Inline Function :
 
-// const test = () => {}; // We get Inline Function if we assign Anonymous Function to a Variable.
+// // const test = () => {}; // We get Inline Function if we assign Anonymous Function to a Variable.
 
 // const test = () => {
 //   const d = 1;
@@ -106,24 +107,51 @@
 // };
 // test();
 
-// ES6 :
-// const test = () => {
-//   const d = 1;
+// // ES6 :
+// const tests = () => {
+//   const dd = 1;
 //   console.log({ d });
 // };
-// const d = "alpha";   //  The variable d(inside function) didnt get affected the declaration of same variable outside the function.
+// const dd = "alpha"; //  The variable dd(inside function) didnt get affected the declaration of same variable outside the function.
 // console.log({ d });
-// test();
+// tests();
 
-// ES5 :
+// // ES5 :
+// const d = "alpha";
+// function testss() {
+//   console.log(`global variable : ${d}`);
+// }
+// testss();
 
-const d = "alpha";
-function tests() {
-  console.log(`global variable : ${d}`);
-}
-tests();
+// // Output : [global variable : alpha]
+// // bahira declare gareko variable "d" ko value bhitra function le liyo , So in ES5 function self contained hudaina
 
-// Output : [global variable : alpha]
-// bahira declare gareko variable "d" ko value bhitra function le liyo , So in ES5 function self contained hudaina
+// // 9. CallBack Function :
+
+// const print = (data) => {
+//   console.log({ data });
+// };
+
+// const parent = (abcde) => {
+//   const num = "Arnav";
+//   abcde(num);
+// };
+
+// parent(print);
+
+// 10. Pure Function : 
+
+// In JavaScript, a pure function is a function that always produces the same output for the same input
 
 
+const upperConverter = (text) => {
+  console.log(text.toUpperCase());
+};
+
+upperConverter("Arnav");
+upperConverter("Asmi");
+upperConverter("Bhattarai");
+
+// 11. Implicit Function :
+
+// 12. Explicit Function :
