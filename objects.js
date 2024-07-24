@@ -29,7 +29,7 @@ console.log(arnav.newAge());
 
 // Update
 arnav.name = "arnav bhattarai";
-console.log({ arnav });
+console.log({ arnav });   
 
 // DELETE
 
