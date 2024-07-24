@@ -1,91 +1,129 @@
-// TYPES OF FUNCTION :
+// // TYPES OF FUNCTION :
 
-// 1. DEFAULT Function :
+// // 1. DEFAULT Function :
 
-const defaultFunc = (name) => {
-  console.log(`Hello ${name}`);
-};
-defaultFunc("Arnav"); // Hello Arnav
-defaultFunc("Admin"); // Hello Admin
-defaultFunc(); // Hello undefined
-
-const defaultFunc1 = (name = "User") => {
-  console.log(`Hello ${name}`);
-};
-defaultFunc1("Arnav");
-defaultFunc1("Admin");
-defaultFunc1(); // Hello User
-
-// 2. Parameterized Function :
-
-const sumation = (a, b, c, d) => {
-  console.log(a + b);
-};
-sumation(2, 3, 1, 4);
-
-// Parameterized function applied :
-const sumations = ({ a, b, c, d }) => {
-  console.log(a + b + c + d);
-};
-sumations({ a: 2, b: 3, c: 1, d: 4 });
-
-// 3. Arrow Function :
-
-const summ = (a, b) => {
-  return a + b;
-};
-
-// 4. closure Function :
-
-// FOR EXPLANATION:
-// let count = 0;
-// const counter = () => {
-//   count = count + 1;
-//   return count;
+// const defaultFunc = (name) => {
+//   console.log(`Hello ${name}`);
 // };
-// console.log(counter());
-// console.log(counter());
-// console.log(counter());
+// defaultFunc("Arnav"); // Hello Arnav
+// defaultFunc("Admin"); // Hello Admin
+// defaultFunc(); // Hello undefined
 
-// ACTUAL COUNTER FUNCTION:
-const mainCounter = () => {
-  let count = 0;
-  return () => {
-    count = count + 1;
-    return count;
-  };
-};
-const count1 = mainCounter(); // dashain counter
-const count2 = mainCounter(); // tihar counter
-console.log(count1());
-console.log(count1());
-console.log(count1());
+// const defaultFunc1 = (name = "User") => {
+//   console.log(`Hello ${name}`);
+// };
+// defaultFunc1("Arnav");
+// defaultFunc1("Admin");
+// defaultFunc1(); // Hello User
 
-console.log(count2());
-console.log(count2());
+// // 2. Parameterized Function :
 
-// 6. Recursive function
+// const sumation = (a, b, c, d) => {
+//   console.log(a + b);
+// };
+// sumation(2, 3, 1, 4);
 
-// factorial of 5
+// // Parameterized function applied :
+// const sumations = ({ a, b, c, d }) => {
+//   console.log(a + b + c + d);
+// };
+// sumations({ a: 2, b: 3, c: 1, d: 4 });
 
-const factorial = (num) => {
-  if (num === 0 || num === 1) {
-    return 1;
-  }
-  return num * factorial(num - 1);
-};
+// // 3. Arrow Function :
 
-const fact = factorial(5);
-console.log(fact);
+// const summ = (a, b) => {
+//   return a + b;
+// };
 
-// write a recursion formula for countdown
+// // 4. closure Function :
 
-const countDown = (counter) => {
-  console.log(counter);
-  let count = counter - 1;
-  if (count === 0) {
-    return 0;
-  }
-  return countDown(count);
-};
-countDown(10);
+// // FOR EXPLANATION:
+// // let count = 0;
+// // const counter = () => {
+// //   count = count + 1;
+// //   return count;
+// // };
+// // console.log(counter());
+// // console.log(counter());
+// // console.log(counter());
+
+// // ACTUAL COUNTER FUNCTION:
+// const mainCounter = () => {
+//   let count = 0;
+//   return () => {
+//     count = count + 1;
+//     return count;
+//   };
+// };
+// const count1 = mainCounter(); // dashain counter
+// const count2 = mainCounter(); // tihar counter
+// console.log(count1());
+// console.log(count1());
+// console.log(count1());
+
+// console.log(count2());
+// console.log(count2());
+
+// // 6. Recursive function
+
+// // factorial of 5
+
+// const factorial = (num) => {
+//   if (num === 0 || num === 1) {
+//     return 1;
+//   }
+//   return num * factorial(num - 1);
+// };
+
+// const fact = factorial(5);
+// console.log(fact);
+
+// // write a recursion formula for countdown
+
+// const countDown = (counter) => {
+//   console.log(counter);
+//   let count = counter - 1;
+//   if (count === 0) {
+//     return 0;
+//   }
+//   return countDown(count);
+// };
+// countDown(10);
+
+// // 7. Anonymous function
+
+// (a) => {
+//   console.log(a);
+// };
+
+// 8. Inline Function :
+
+// const test = () => {}; // We get Inline Function if we assign Anonymous Function to a Variable.
+
+// const test = () => {
+//   const d = 1;
+//   console.log({ d });
+// };
+// test();
+
+// ES6 :
+// const test = () => {
+//   const d = 1;
+//   console.log({ d });
+// };
+// const d = "alpha";   //  The variable d(inside function) didnt get affected the declaration of same variable outside the function.
+// console.log({ d });
+// test();
+
+// ES5 :
+
+const d = "alpha";
+function tests() {
+  console.log(`global variable : ${d}`);
+}
+tests();
+
+// Output : [global variable : alpha]
+// bahira declare gareko variable "d" ko value bhitra function le liyo , So in ES5 function self contained hudaina
+
+
