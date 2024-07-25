@@ -33,9 +33,7 @@ console.log(cars[0]);
 
 // console.log({ copyOfCars });
 
-let copyOfCars = cars.slice();
-let copyOfCars = [...cars]; //[{},{},{},{}]
-
+const copyOfCars = [...cars]; //[{},{},{},{}]
 const newName = "Tesla Model X";
 copyOfCars[0].name = newName;
 
@@ -44,6 +42,8 @@ console.log({ copyOfCars });
 // delete
 
 const [a, ...rest] = copyOfCars;
+// const [a,b,c, ...rest] = copyOfCars;
+
 console.log({ rest });
 
 //Array operations (methods)
@@ -58,12 +58,12 @@ console.log({ rest });
 // cars.slice(2,4);
 // cars.slice(start, end(end not included));
 
-Map;
-Filter;
-reduce;
-sluce;
-splice;
-some;
-every;
-includes;
-find;
+// Map;
+// Filter;
+// reduce;
+// slice;
+// splice;
+// some;
+// every;
+// includes();
+// find();
