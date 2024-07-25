@@ -8,13 +8,13 @@ const people = [
   { name: "paras", age: 25 },
 ];
 
-const ageSorter = (arr) => {
-  // process the value
-  return arr.sort((a, b) => {
-    // Callback function
-    a.age - b.age;
-  });
-};
+// const ageSorter = (arr) => {
+//   // process the value
+//   return arr.sort((a, b) => {
+//     // Callback function
+//     a.age - b.age;
+//   });
+// };
 
 const ageSorter = (arr) => {
   const compareFn = (a, b) => a.age - b.age;
@@ -28,3 +28,5 @@ const ageSorter = (arr) => {
 
 const result = ageSorter(people);
 console.log({ result });
+
+
