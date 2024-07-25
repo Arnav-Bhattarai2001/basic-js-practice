@@ -8,20 +8,27 @@ let prod = {
 };
 
 const newProd = prod;
-
-const newObject = (newProd) => {
-  if (prod.price > 100) {
-    prod.discount = "10%";
-    prod.price = `${price} - (0.10 * ${price})`;
-  }
-  return newProd;
-};
-
+newProd.price = 80;
 const newObject1 = (newProd) => {
   if (prod.price <= 100) {
-    prod.price = `${price} - (0.07 * ${price})`;
+    const newPrice1 = newProd.price - 0.07 * newProd.price;
+    prod.price = newPrice1;
   }
   return newProd;
 };
+const belowHundred = newObject1(newProd);
+console.log({ belowHundred });
 
-console.log({ newProd });
+const newProd1 = prod;
+newProd1.price = 150;
+const newObject = (newProd1) => {
+  if (prod.price > 100) {
+    prod.discount = "10%";
+    const newPrice = newProd.price - 0.1 * newProd.price;
+
+    prod.price = newPrice;
+  }
+  return newProd1;
+};
+const aboveHundred = newObject1(newProd1);
+console.log({ aboveHundred });
