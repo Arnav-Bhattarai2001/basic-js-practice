@@ -102,3 +102,40 @@ const genderSorter = (a, b) => {
 };
 const genderSortResult = sortGender.sort(genderSorter);
 console.log(genderSortResult);
+
+// Question 1 : MAP
+
+// a . Get an array of all names
+// b . Get an array of all heights
+// c . Get an array of objects with just name and height properties
+// d . Get an array of all first names
+
+// a . Get an array of all names
+
+// const names = nameMap.map((a, b) => a + b);
+// const names = nameMap.map( a => a.name);
+
+const nameMap = [...characters];
+const names = nameMap.map((nameMapped) => nameMapped.name);
+console.log(names);
+
+// b . Get an array of all heights
+
+const heightMap = [...characters];
+const heights = heightMap.map((heightMapped) => heightMapped.height);
+console.log(heights);
+
+// c . Get an array of objects with just name and height properties
+
+const nameHeightMap = [...characters];
+const heightAndNames = nameHeightMap.map((hn) => ({
+  name: hn.name,
+  height: hn.height,
+}));
+console.log(heightAndNames);
+
+// d . Get an array of all first names
+
+const nameMaps = [...characters];
+const named = nameMaps.map((nameMapped) => nameMapped.name.split(" ")[0]);
+console.log(named);
