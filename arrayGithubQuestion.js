@@ -103,7 +103,7 @@ const genderSorter = (a, b) => {
 const genderSortResult = sortGender.sort(genderSorter);
 console.log(genderSortResult);
 
-// Question 1 : MAP
+// Question 2 : MAP
 
 // a . Get an array of all names
 // b . Get an array of all heights
